@@ -1,6 +1,5 @@
 name: Deploy Azure Function App
 
-
 on:
   push:
     branches:
@@ -9,10 +8,6 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
-    env: env:
-      ACTIONS_STEP_DEBUG: true
-
     steps:
     - uses: actions/checkout@v2
 
